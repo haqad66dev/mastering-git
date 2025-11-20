@@ -1,0 +1,1667 @@
+Delivered-To: haqad66@gmail.com
+Received: by 2002:a05:6359:6d97:b0:22a:ce89:a925 with SMTP id tg23csp5577972rwb;
+        Sat, 4 Oct 2025 04:55:23 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHRpzev/OCusFU1WMGjtSr5wNu6w+UtZoSrVuYsgsO9/dUSJziKGch4/Cs6ca0Snf4z6tzb
+X-Received: by 2002:ad4:5965:0:b0:78f:493d:15c6 with SMTP id 6a1803df08f44-879dc7ba1e1mr65902476d6.3.1759578923603;
+        Sat, 04 Oct 2025 04:55:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1759578923; cv=none;
+        d=google.com; s=arc-20240605;
+        b=gJ1obUyqteS71Wm3OfLmNI2M5JwX1Uz4mcg0ZG2t2lDnZ3/z8zDnjQBg1l/tTpkNQV
+         3DidGRgUsnFVM29SlIZ1ceLaP8PrGf1EnVHVU2kTAIEyzi4F0diFvn9Iw6KjYnYKcpfa
+         HDAV9DwV45//8FTYRJcrw+i3XETg78y0OBF88QCUP6jRc0v86dXMnXGGSmZ/ZY9jsveE
+         34H1alX1q4l0chk5PYJl7eGSLFA+NYjGkzTkC/3Hgsva+iKPrFVYFsoW0XhWaOXaJSHj
+         Cm8ng1vLnSgRWq8cn/2ZGnU3fnHiFnHZ5smz+0J0uGlk3JTYJsb5/JCqKSf8d9XDXj7r
+         9WdA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:precedence:mime-version:subject
+         :message-id:to:reply-to:from:date:list-unsubscribe:dkim-signature
+         :dkim-signature;
+        bh=iG45XdHIH0TEqTZOhPwwua1qeFM+1tsA3AURDq3YwE8=;
+        fh=jTxuS2/tg43A3M9DBfdipDwW/viJCEx276xHPuiZuQ8=;
+        b=RZDHrd3QqkAOw3p1P/f3OBeERkmjTsgb/upn+jvVdG6FXudb+fW5/4V3z1Azf9X3bK
+         EP/1qr+47FlNGtXfZTjWYtU6D57eCRjYJ4P4qxBzT70MFKnGLE3k1WnaIGO/b8YebuT/
+         cSYw39rPAK2oA5wu8GavT3K2Chi6Zg8n7E3C5hCCPWSxJ9UTR8lymSDXY17T3zarkvo0
+         nn7j3ks7Flo52kwEcgwSS1u3hIj7ydCN4uhc2XRiBGtalUE0gqT7C/Dyo2CdRaQGGHED
+         SZDlcXjK6BVT19cUZEQT8+M28qILX9nvmLjUki6QgyMg3HVFFLjYa/6EBORWmLWn8Xo4
+         wh8A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bf54x.hubspotemail.net header.s=hs1 header.b=F9yEScWs;
+       dkim=pass header.i=@mail.kodekloud.com header.s=hs1-6783951 header.b="AZBiNE/f";
+       spf=pass (google.com: domain of 1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net designates 143.244.91.64 as permitted sender) smtp.mailfrom="1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kodekloud.com
+Return-Path: <1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net>
+Received: from bd77glu.bf54x.hubspotemail.net (bd77glu.bf54x.hubspotemail.net. [143.244.91.64])
+        by mx.google.com with ESMTPS id 6a1803df08f44-878becfd2b0si32104086d6.962.2025.10.04.04.55.23
+        for <haqad66@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 04 Oct 2025 04:55:23 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net designates 143.244.91.64 as permitted sender) client-ip=143.244.91.64;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bf54x.hubspotemail.net header.s=hs1 header.b=F9yEScWs;
+       dkim=pass header.i=@mail.kodekloud.com header.s=hs1-6783951 header.b="AZBiNE/f";
+       spf=pass (google.com: domain of 1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net designates 143.244.91.64 as permitted sender) smtp.mailfrom="1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kodekloud.com
+Received: by 172.16.157.3 with SMTP id a0b2377bl4ybyduznt4ohf4h31peuzbr9cbu79bbt0z;
+        Sat, 4 Oct 2025 11:55:23 GMT
+DKIM-Signature: v=1; s=hs1; d=bf54x.hubspotemail.net; 
+        i=@bf54x.hubspotemail.net; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=iG45XdHIH0TEqTZOhPwwua1qeFM+1tsA3AURDq3YwE8=; 
+        b=F9yEScWsT9HHTZ0o67EGI1PS9NRclAEz/Ohb3mWQgqUjwZdEJbUrZMKt739O53
+         s5WPsL25UrNuveDVm66htbLpPtPM5Sj14XJXb84A0GycXgQ/AIdUvRGPo1zmngZ
+         hw7APgDyYW+c6FTFx3oOIklCYG97Q7x1NN8OhWRbyY4a0EI5FBZI+YPiaFM1UKv
+         v/iqTVpjzKyN1lLKccBAl7DgaqBOYuWxR8wzn/kNI9i1hhcaeclw4cceLDIOwZf
+         W402CUVoy3X38Sm6SLXUnZrWcHFpVybwHnMbhcP29Ql2NQXp8wZgY0akmRY8Ie1
+         xexWxGhz0W3JQOmmBw6vLnRfERxA==; q=dns/txt; t=1759578922; 
+        x=1759841722;
+DKIM-Signature: v=1; s=hs1-6783951; d=mail.kodekloud.com; 
+        i=@mail.kodekloud.com; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=iG45XdHIH0TEqTZOhPwwua1qeFM+1tsA3AURDq3YwE8=; 
+        b=AZBiNE/f1su0sDqlzh0yYT5mJaKxgtm6D9jRMtKRvTfQGme9ToW91BaP7hcVlI
+         0zMkBjTIy7shSe3ZUgOf2IU5SkfZ+AwpcZZkgyxde/8h/wpoQp7KcOjgsPB+Ejx
+         Ym/AkFAMXu66NwxA/OpONfxBzuuh93HNh4zAR20L3ZVCsyoDxp3CbQ57EqsmHaI
+         NYQ0ahZdqjUe5tOSNeOo6W9jJApJUexVQ+nl+9+A0E+wQ8tOyGo4lKKh0KXDghq
+         YKuTmUMCICCHRS5joz1IHAf2De1rDGPTuqqy/A1G1lwyjKMKTBx3vPwVslcxgO8
+         4RtKU9tKy6Qb37wt1BRSGRSJ/zBw==; q=dns/txt; t=1759578922; 
+        x=1759841722;
+Return-Path: <1axb18fd79z5222k54cmwxj8pb2gh0rrd847yo-haqad66=gmail.com@bf54x.hubspotemail.net>
+X-HS-Cid: 1axftyo5ofo6mn97mvngls8nkr8zyddcl1xspc
+List-Unsubscribe: <mailto:1axdgp7d4j9j3wsyabzaptax8hqwadtw8bhggg-haqad66=gmail.com@bf54x.hubspotemail.net?subject=unsubscribe>, <https://team.kodekloud.com/hs/subscription-preferences/v2/unsubscribe-all?data=W2nXS-N30h-RpW1SBSBz2HyVtfW3byx8N1Q0QGdW1SbcPf2Yx2-TW2sTxl934pQW0W2MyVQl212ZRVW4rvBHB2CMKQ9W3FbQLv1-ZLdvW4msWBd4hF8jSW4fr0Z-2w4MZYW3_VMVb3QVxgTW2CCpFS2FMt46W3XyTtc49jNfBW3_H7Zx3K7YMcW4ft7qQ4fKXXjW1V21M62KRLZXW367YzV2Hqs9dW3g8fXC3VXhPtW327RWT3gvgG5W2MFT4b1Xf4gcW3ZwfyP47pFQCW2p2wjJ2RzkhYW3g73Bs49P7SSW47xHl33W13s2W41ZMXm1X7cxgW2MX1KD3g8m_mW2v_Qgr4pkc3tW3P6LHQ4rfgSXW36jHWq2YMZfhW4pbyyr3NXW6cW2KzWky36q4KnW43Jp-62B3cgsW365M8l1Sb6gcW49QW7H3bvB00W1BnkM22YMv3fW3btR5x43Qb3lW4h9_bm2MPTmxW2Ry-8S3M6wdSW45Flc93P5SzrW23qKY943zlx8W1ZccpH4cKhpKW3VNQZ324X0pRW1_34HK3H8bsRW1BJshx4rmCgPW45pMD52nRVT7W43yxDq2r594YW3XF6MV2CShv2W4fpNfT1QrcwWW2w16dc2MWcbbW2Yshzm38b7x90>
+Date: Sat, 4 Oct 2025 19:55:23 +0800
+From: Nimesha Jinarajadasa <learning@mail.kodekloud.com>
+Reply-To: team@kodekloud.com
+To: haqad66@gmail.com
+Message-ID: <1759578922777.a3cfd291-7fe7-46c1-8912-513d24f5e18e@bf54x.hubspotemail.net>
+Subject: =?utf-8?Q?Day_2/10:_Where_Am_I=3F_What=E2=80=99s_i?=
+ =?utf-8?Q?n_This_Folder=3F_Let=E2=80=99s_Find_Out.?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_16589_373645324.1759578922888"
+Precedence: bulk
+X-Report-Abuse-To: abuse@hubspot.com (see
+ https://policy.hubspot.com/abuse-complaints)
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: aeebotd:aigl9qyg:aib1s:HubSpot
+
+------=_Part_16589_373645324.1759578922888
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Navigating the Linux Filesystem
+
+kodekloud-logo-new (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJ=
+j5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3nzW5CyRRS99R_9vV8nRw=
+y1VwcpPW3QJ37s7NjrTxW55HQx78c9rcrMfjcKyVVN77W8bShg72f-fd1W4Qy5-y84WRtRW8F29=
+5W99Zj2gW7g-85841ZyDzW58fVxd5CjHn1W8zn55r2F19QmW8qg1mf26nKgjW2_69xZ8qxb60W8=
+-5K2N2ZNwlqW3y2bxl3Dl1FlW6c1Y6P5yc3DhN6gD2d8N3RCBV8-PcZ13P3xqW8V30l21YLfFDW=
+8H67Wt1HvH8HVn83tj4BFqlGW8ndxq45jc-8sW4xdg5n1gNF3bW6L9yG04vR4J6f7DYkJT04 )
+
+Hello Haitham Alqadamani ,
+
+Where Am I? What=E2=80=99s in This Folder? Let=E2=80=99s Find Out.
+
+First Lesson of Any Linux Journey: Know Where You Are
+
+When you SSH into a Linux server or run a container shell, your very first =
+question should be:
+
+=E2=80=9CWhere am I in the filesystem?=E2=80=9D
+
+The Linux filesystem is hierarchical - like a tree.
+
+You always start at the root, /.
+
+Everything - files, folders, config, users, devices - lives somewhere under=
+ /.
+
+Quick Start Commands
+
+Command
+
+Purpose
+
+pwd
+
+Show Present Working Directory
+
+ls
+
+List files in the current directory
+
+cd /path/dir
+
+Change directory
+
+cd ~ or cd
+
+Go to your home directory
+
+cd -
+
+Jump to your previous directory
+
+=F0=9F=93=8C These commands are your daily toolkit.
+
+Filesystem Tree
+
+/
+
+=E2=94=9C=E2=94=80=E2=94=80 bin/
+
+=E2=94=9C=E2=94=80=E2=94=80 etc/
+
+=E2=94=9C=E2=94=80=E2=94=80 home/
+
+=E2=94=82   =E2=94=94=E2=94=80=E2=94=80 devops/
+
+=E2=94=82       =E2=94=9C=E2=94=80=E2=94=80 scripts/
+
+=E2=94=82       =E2=94=94=E2=94=80=E2=94=80 notes.txt
+
+=E2=94=9C=E2=94=80=E2=94=80 var/
+
+=E2=94=94=E2=94=80=E2=94=80 usr/
+
+Your Location Changes:
+
+$ pwd
+
+/home/devops/scripts
+
+You are inside the scripts folder of the devops user.
+
+Important Directories You'll Visit Often
+
+Directory
+
+What's Inside
+
+/
+
+The root of all things
+
+/home/
+
+Personal folders for users
+
+/etc/
+
+Configuration files
+
+/var/
+
+Logs, spool data, variable app files
+
+/usr/
+
+User binaries and read-only system resources
+
+/bin/
+
+Essential command binaries (ls, cat, etc.)
+
+You don=E2=80=99t have to memorize all paths. Just know where to look when =
+debugging.
+
+Try It Yourself (On Any Linux System)
+
+pwd              # Where am I?
+
+ls               # What's here?
+
+cd /etc          # Jump to config folder
+
+ls -l            # List with details
+
+cd ~             # Back home
+
+cd -             # Jump to last location
+
+=F0=9F=93=8C These might be the first 6 commands you'll type when debugging=
+ a Pod or EC2 instance.
+
+Summary Table
+
+Concept
+
+Meaning
+
+Filesystem Root
+
+/ is the top of the Linux filesystem
+
+pwd
+
+Shows your current location
+
+cd
+
+Moves you around
+
+ls
+
+Lists files/folders
+
+Key folders
+
+/home, /etc, /var, /bin, /usr
+
+Quick Review
+
+- What does cd - do?
+- Where would you find the nginx.conf file?
+- Which directory holds logs like syslog?
+
+Answers:
+
+- Goes to previous directory
+- Likely /etc/nginx/nginx.conf
+- Logs live in /var/log/
+
+=F0=9F=94=9C Up Next: "The 20 Commands You=E2=80=99ll Use 80% of the Time."
+
+Happy Learning!
+
+Nimesha Jinarajadasa
+
+Solutions Engineer (DevOps & Cloud)
+
+KodeKloud
+
+Kode Kloud (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW=
+73TvPS2dFKnDW5b9Bvk5DdsQyMXl4p03prCCW6N1vHY6lZ3kMW5v7g_J6tfJw1W5-hqW34qzzmB=
+W2kRxG61vn_PBN2rp-T94fLq_W1Qwk7f5L5qsJW7x4Rj324bPFdW7YMk9t4FCFKyVG-HM15Qvy4=
+gW67Qywx91lQXNW1h6Sst32mqkhN9d7hP7PZGJGW6RtyBL5_vLmRW3jRkL95XBd5-W5kMn8B5Jq=
+S-6Mn9QqW-G7mDW5gl3mB26mXlXVZ3Shw8MQhQVN9l1z6cXDP0wW5fT3TJ6n4gRGW4T48C07GwZ=
+RlW3JSjkf9lrLhfW5yT-7m3GhD_Yf3Py_3Y04 )
+
+Learning Path (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4s=
+BdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3p8W7yTGmY6wkQMrW1CR_hg7Q4=
+HJlW1kCTSG3HgX2MW3Cs5Z83m_S5xW3PXQ9N71tkjkVKyrNF7cGs6RW9m4R4t6bcVksW48tnPb1=
+Yx8F7W1_LV9D5nMw5JW7jJZm42Qt6mpW4tB6fT180hFkW14N7f3215R35N7GhXhmFvlkKN8Z6Lx=
+Kq6_WpN5hh9Qqg6GrPW8tgBXx4by3_SMWy3FPt3GSNW1sp6qX8ZlrWyW5gvdCT95RBbFV12V391=
+wHrVJW4PFcPJ758R_qW2LV0D44fWxdgW1ltyQv4YFMvRW2Mp4-W74_k98f3V2gR004 ) | For =
+Teams (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvP=
+S2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3m4W4DhjjY7GjXTnW6VfkDr8TTBR9W4Fb1=
+-C6N1F92W1C7sPB5h-djRVnzTTB2WwPxNW1W788g42NY14W3YCLC18KGJCvW6jrgDK1s1nMHW1P=
+p3-z1qd5RKN3Ff74jQvwjcVtJt7z6wK09LW2TQMb15x3PN0W18Mt7d6sgGQdW4nv3Df6Zr0SmW4=
+0gMcK9g6JbHW8JbmXZ1d9yHCW44kvBV73bryZW5-W06G1Tyyh0N6-sdHq_4DT_W4qCW3131fSh4=
+W2JzWwl7Yfx6NW8X_Vwh8QT83JW15N-Wm3m25GxN4QlPGrGztgSf85zwnx04 ) |  KodeKloud=
+ Engineer (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW7=
+3TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3ksW8lFb6g5NMw89N4sRJ3TY69gHW1=
+TZJGp7tvQ6xN7rlVrzv4SB5W5l0BJ81VqP7dW5vzyjc5Sr3MBVC8YmF2BTQLvW7xpHC944q-s2N=
+1GcY7llthRJVSC76v5qk7csW1_TTJK7wMhKdW6rlKzp3xjMYHVqTrt56bD9nYW1rHYsZ4L6xdrN=
+7b79Cjn8nNtW7bqQY67YG-ftW3C-6Kw1Snn7tW6KcpcZ75KWXQW7p4P_d53lkXgW5sNPmR5xN9m=
+QW45YKn38TSfymW1JKfRV3LkvHnW3S_dGk3HMFlfW40-bX92w7svLf3zw-ss04 ) | Playgrou=
+nds (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2=
+dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3mLW80WhWC3Wybx8W6PBPV94LLNcdW50C8pN=
+3pq_ZvW4PstzW6fRXnhVlXCcT8WmN4nW2KclQP3thX4RW88Z1jQ88Mc7dW95mSRD1z6D7pW36Tx=
+lJ1bGr1WW4K6wk16sSxP9VxrSGQ7SnTHZW3HV6Xx8rjyXHW48DFfF8N-MW8W170N1B8sFLZRW1w=
+R8vF6DfjCTVXQ0JS3TZSXyVqvxDQ1cl48RW933tY46LRy40W6zDH1R858lFSW5KbP613lTjCjW3=
+pxwsR5WqP-BW4YZCGG2h7Z9WW45F4hl7ty625W5MLw0S4_v297f1rZlzd04 )  | Pricing (h=
+ttps://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dFKnDW=
+5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3mFW2hR5r34nqy0PW8Zw6tT6cDhNFW6X0pgq6Db8Zk=
+VRwr8849kB3BW3-9k3m561vQKN3rJ5XbYl_58W44NvLQ3dpK54W2Vf9nN4hclkmW2P7R6-8lXtV=
+fW4tWgh71W2RvqW6mwKB22PXHr0W464mBT8Gb1qxW2VJRWg25J6DgW4Fr00J2v52QnW8wG8yM3_=
+YHs9W8wxnX76WxVlZN2NH-6bplW11W8fPfft2tzgcvW7FpSCL8btG16W8nb8428QbwlnW5rDS44=
+8S-l6gW7pzr668bxJPcW2Q8zDD5VF92kVlywjk5P710rf51M8Wj04 )
+
+Facebook (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73=
+TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3nxVqwjBr26tgBCW1tk9-M6QDsl6W6R=
+v-K32Lv8LfTRLb38sLVgqW5ssnZq4G16KdN6HxpzTTCmnYW5Rs3bk506tV3W5T0sv88R24tPW8c=
+96dc8JwXg1W6whYSP6m3qbPW27cM-18qCr92W8SQFHr5WDGQJW2ZX-Xn8pqTXNW2fKwYV1PF6TC=
+W6Wj5pc2fFX_cN4FP6c7CsZs8VH5lZq8fTZ7KW3-R-2v5VKN4yW4gWcZ_5XvWxnW1h44cg8b4Hr=
+QW5B9G-660n5z7W489L4Q3QN7jkW1Pxd6M99Xq9VW55G2jq1skVZSf7_TTHW04 )
+
+LinkedIn (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73=
+TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3kHW7K9ZTT6RJxKjVvpS9v2Pr2N6W4h=
+grbV8gRlfXW4KGKnY3ydRTQW7XmyhY7XLCYGVnC3Kg1ZXZshW2TCGrz74bh5WW6tjVRh8l1BMKN=
+48CzwcZQCVCW7JQ_h87lS11vW93rxsn1tdwkfW7ZKQkj4rjNKGW1bfzMJ3BS8zZV7rXFm1srtK6=
+W6YCJ7D17hQtBW3HZxmB3-Lj2GW7PCVtL80skD6N9920RV10dfBW73hz581GdjPCW4kvXYz4jwy=
+QZW25VxxY4c9mynVpy6fL4PCWbPW6FS6P98d6XSNW3bxqyZ6FLMc_f1fmlgd04 )
+
+X (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dF=
+KnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3pYN6v6KsRgRpxRW23XYZN6qzq73W4l-b2j1Kk=
+gbGW3HwPZs8YZQ9jN7jdx_ldWw1DW4fv2yV27KtLZW4zTJtN6w52WGW82Qjg055tpM8W8PP6d05=
+xRhKHF5kjcCJn-0fW3XkKmh4hZBhtW5MhR7K4qXR1gW41j_S13W_Gm6MCxX5WqnpVtVRmlZb7-z=
+sKzW5qT7xt28-Ls0W6qkf-l4zfGBLW2JwMXd2fqqTmW91vR-y5x1qplW1LKNMS297bbhW5NDn7Z=
+3WV2t-W1vCQkf5ScwKrW2CTPCJ44_DM8W2c5PdM8SkD_Wf3BQxg404 )
+
+Instagram (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW7=
+3TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3lMW13CYqX1-sMhzW98lQRT5LgHPXW=
+6btQq356--_SW4hPr2Y8_CPH-W6g0MV07dQd2fVPL5_f288F8tVc_LJZ5XQ2j-N4LL8f1n-PNHV=
+3g_y86-qcMfN18BdMrcmFgcW1H7cdq2q1zmqW7k0bfJ6FcHm-W50w4FJ4lWpSDW5jQRlm6Vml08=
+W66H2sV1n1_G6W5QQlHM7F2YCGW2SNKMl6TdB9gN1VgrVxGCl3sW43C9GJ3s1L4nW75vQnP38nV=
+gJW1V2fHG3DrLT8VGwctr6gkRPlW1m_zS92FV74TW8lYBqK4F0HHjf3gSfT004 )
+
+YouTube (https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73T=
+vPS2dFKnDW5b9Bvk5DdsQyMXl4pj3prCCW7lCdLW6lZ3nvW3j-r492FwCTjW1jm0pD6Y0ylFVrR=
+m7M7BvRRDW6dc5729h0ktCW92_Fjn6zSMvQW3KWPd46fKpDwW6R20D_3RQwK2W2z_spR1kzPqwN=
+7Yl3mZy3WQ_W3P_PzS6Rl6F2W8mqRfL73S_t8W4ddV1-1yXK25W3dGB167MLy9GW1_Dyyx52_s-=
+LW7jzzKM4rwVnvN8lBghh9KH9zW7rrlJ54xtwxcW9jzrl_5t7jDJW1hHyLV4gjT7LW1Mr-vC6mD=
+D6xW7yjgGM9fJSt-W1zccw19ck__rW1MJLp2542q0MW8781zW8WQvgbf2hNPxM04 )
+
+Unsubscribe (https://team.kodekloud.com/hs/preferences-center/en/direct?dat=
+a=3DW2nXS-N30h-zKW3b2qZW1N6sMLW1V25rm4cSPzBW1L8HJ91S9hzVW3g715L1-_lj_W3JR2g=
+C47zQrgW3XWc1Z47v6NsW2xzjdr2MXtwDW3KbqtN3P0XGMW4kmf-j2KBprGW2C-Rq02PLLb6W3C=
+0DXB1N5_nJW3LYYBj4rlJnQW3ZZQts3T541-W4mk2y82KCf9XW3Kb16v3j9MTTW4t6Vcr3y-k8Z=
+W2RR0Y71LmtrDW4rqX_J2Tshw7W2vz7tV4kfw0mW49l36z3ZHMrxW4t6S-73GS6nSW43qtlw38v=
+pm8W2CYM-W2Pl5LtW43Xxxl3_T87kW3ChJ232FWVH6W2YqFDp2G0fhzW3F0rlP1LfgZmW23mnlp=
+3Fg8f1W2vJy5C4tgQbgW2RknXs4hxFgCW47tKb72qFgYpW3f-MrW2PVftpW3DVMDD3dr4SvW3NL=
+Yjl3DSgM8W4rzRL12Wy7l-W3_LWXF3C7hB2W41V9kH2MLyh7W4r7xlz4pbFc9W3LHMNB34hFyFW=
+3NGfn043YjqgW2MNzdv1S9jKGW3P9d_41NdfWbW2FJzb52qLJD0W2-JPG536zlKtW47PrG83JWG=
+r4W1Bm4Mw3C8ybJW3675sJ38kd1TW2KyMlJ2FLM0YW2YKWK349Kt3J0&_hsenc=3Dp2ANqtz-9c=
+AptwxhOcpVMwJNaB2pWoWC-y6xNecI3x3VIoZiVawRDL_CxkNpV1NSutbO3iPkPlkYUsdq0ulNv=
+toiHt3pKL2opy6w&_hsmi=3D382927398 ) or Manage Preferences (https://team.kod=
+ekloud.com/hs/preferences-center/en/page?data=3DW2nXS-N30h-zKW3b2qZW1N6sMLW=
+1V25rm4cSPzBW1L8HJ91S9hzVW3g715L1-_lj_W3JR2gC47zQrgW3XWc1Z47v6NsW2xzjdr2MXt=
+wDW3KbqtN3P0XGMW4kmf-j2KBprGW2C-Rq02PLLb6W3C0DXB1N5_nJW3LYYBj4rlJnQW3ZZQts3=
+T541-W4mk2y82KCf9XW3Kb16v3j9MTTW4t6Vcr3y-k8ZW2RR0Y71LmtrDW4rqX_J2Tshw7W2vz7=
+tV4kfw0mW49l36z3ZHMrxW4t6S-73GS6nSW43qtlw38vpm8W2CYM-W2Pl5LtW43Xxxl3_T87kW3=
+ChJ232FWVH6W2YqFDp2G0fhzW3F0rlP1LfgZmW23mnlp3Fg8f1W2vJy5C4tgQbgW2RknXs4hxFg=
+CW47tKb72qFgYpW3f-MrW2PVftpW3DVMDD3dr4SvW3NLYjl3DSgM8W4rzRL12Wy7l-W3_LWXF3C=
+7hB2W41V9kH2MLyh7W4r7xlz4pbFc9W3LHMNB34hFyFW3NGfn043YjqgW2MNzdv1S9jKGW3P9d_=
+41NdfWbW2FJzb52qLJD0W2-JPG536zlKtW47PrG83JWGr4W1Bm4Mw3C8ybJW3675sJ38kd1TW2K=
+yMlJ2FLM0YW2YKWK349Kt3J0&_hsenc=3Dp2ANqtz-9cAptwxhOcpVMwJNaB2pWoWC-y6xNecI3=
+x3VIoZiVawRDL_CxkNpV1NSutbO3iPkPlkYUsdq0ulNvtoiHt3pKL2opy6w&_hsmi=3D3829273=
+98 ) .
+
+KodeKloud (Brand owned by Zaurac Technologies PTE. LTD.)
+
+14 Robinson Road, #08-01A Far East Finance Building, Singapore, Central Sin=
+gapore, 048545 Singapore
+------=_Part_16589_373645324.1759578922888
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" lang=3D"en"><head>
+    <title>Day 2/10: Where Am I? What=E2=80=99s in This Folder? Let=E2=80=
+=99s Find Out.</title>
+    <meta property=3D"og:title" content=3D"Day 2/10: Where Am I? What=E2=80=
+=99s in This Folder? Let=E2=80=99s Find Out.">
+    <meta name=3D"twitter:title" content=3D"Day 2/10: Where Am I? What=E2=
+=80=99s in This Folder? Let=E2=80=99s Find Out.">
+   =20
+   =20
+   =20
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+    <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    <w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+  </xml>
+ =20
+  <style>
+    ul > li {
+      text-indent: -1em;
+    }
+  </style>
+<![endif]-->
+<!--[if mso]>
+<style type=3D"text/css">
+ body, td {font-family: Arial, Helvetica, sans-serif;}
+ .hse-body-wrapper-table {background-color: #f5f5f5;}
+</style>
+<![endif]-->
+<!--[if mso | IE]>
+  <style type=3D"text/css">
+    .hse-column-container { border: none !important; padding: 0 !important;=
+ }
+  </style>
+<![endif]-->
+   =20
+     =20
+ =20
+ =20
+   =20
+  <meta name=3D"generator" content=3D"HubSpot"><meta property=3D"og:url" co=
+ntent=3D"https://team.kodekloud.com/-temporary-slug-b79fee34-d388-4508-89f0=
+-e37ef9d75bf8"><meta name=3D"robots" content=3D"noindex,follow"><!--[if !((=
+mso)|(IE))]><!-- --><style type=3D"text/css">@media only screen and (max-wi=
+dth:639px){img.stretch-on-mobile,.hs_rss_email_entries_table img,.hs-stretc=
+h-cta .hs-cta-img{height:auto !important;width:100% !important}
+.display_block_on_small_screens{display:block}.hs_padded{padding-left:20px =
+!important;padding-right:20px !important}
+.hs-hm,table.hs-hm{display:none}.hs-hd{display:block !important}table.hs-hd=
+{display:table !important}
+}@media only screen and (max-width:639px){.hse-border-m{border-left:1px sol=
+id #eaf0f6 !important;border-right:1px solid #eaf0f6 !important;box-sizing:=
+border-box}
+.hse-border-bottom-m{border-bottom:1px solid #eaf0f6 !important}.hse-border=
+-top-m{border-top:1px solid #eaf0f6 !important}
+.hse-border-top-hm{border-top:none !important}.hse-border-bottom-hm{border-=
+bottom:none !important}
+}.moz-text-html .hse-column-container{max-width:600px !important;width:600p=
+x !important}
+.moz-text-html .hse-column{display:table-cell;vertical-align:top}.moz-text-=
+html .hse-section .hse-size-12{max-width:600px !important;width:600px !impo=
+rtant}
+@media only screen and (min-width:640px){.hse-column-container{max-width:60=
+0px !important;width:600px !important}
+.hse-column{display:table-cell;vertical-align:top}.hse-section .hse-size-12=
+{max-width:600px !important;width:600px !important}
+}@media only screen and (max-width:639px){.hse-body-wrapper-td{padding-top:=
+20px !important}
+#section_17430562174483 .hse-column-container{padding-top:0px !important;pa=
+dding-bottom:0px !important}
+#section_17430562174483 .hse-column-container{background-color:#fff !import=
+ant} }
+@media screen and (max-width:639px){.social-network-cell{display:inline-blo=
+ck} }@media only screen and (max-width:639px){.hse-body-wrapper-td{padding-=
+bottom:20px !important}
+#section_17292377138116 .hse-column-container{background-color:#1c2943 !imp=
+ortant}
+}</style><!--<![endif]--><style type=3D"text/css">#hs_body #hs_cos_wrapper_=
+main a[x-apple-data-detectors]{color:inherit !important;text-decoration:non=
+e !important;font-size:inherit !important;font-family:inherit !important;fo=
+nt-weight:inherit !important;line-height:inherit !important}
+a{text-decoration:underline}p{margin:0}body{-ms-text-size-adjust:100%;-webk=
+it-text-size-adjust:100%;-webkit-font-smoothing:antialiased;moz-osx-font-sm=
+oothing:grayscale}
+table{border-spacing:0;mso-table-lspace:0;mso-table-rspace:0}table,td{borde=
+r-collapse:collapse}
+img{-ms-interpolation-mode:bicubic}p,a,li,td,blockquote{mso-line-height-rul=
+e:exactly}
+.ShadowHTML p,.sh-modified-inline p{margin:0}</style></head>
+  <body id=3D"hs_body" bgcolor=3D"#f5f5f5" style=3D"margin:0 !important; pa=
+dding:0 !important; font-family:Arial, sans-serif; font-size:15px; color:#0=
+00000; word-break:break-word">
+    <div id=3D"preview_text" style=3D"display:none;font-size:1px;color:#f5f=
+5f5;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;=
+" lang=3D"en">Navigating the Linux Filesystem</div>
+   =20
+<!--[if gte mso 9]>
+<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+    <v:fill type=3D"tile" size=3D"100%,100%" color=3D"#ffffff"/>
+</v:background>
+<![endif]-->
+    <div class=3D"hse-body-background" lang=3D"en" style=3D"background-colo=
+r:#f5f5f5" bgcolor=3D"#f5f5f5">
+      <table role=3D"presentation" class=3D"hse-body-wrapper-table" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"margin:0; padding:0; width:100% !impo=
+rtant; min-width:320px !important; height:100% !important" width=3D"100%" h=
+eight=3D"100%">
+        <tbody><tr>
+          <td class=3D"hse-body-wrapper-td" valign=3D"top" style=3D"font-fa=
+mily:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-wor=
+d; padding-top:20px; padding-bottom:20px">
+            <div id=3D"hs_cos_wrapper_main" class=3D"hs_cos_wrapper hs_cos_=
+wrapper_widget hs_cos_wrapper_type_dnd_area" style=3D"color: inherit; font-=
+size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" d=
+ata-hs-cos-type=3D"dnd_area">  <div id=3D"section_17430562174483" class=3D"=
+hse-section hse-section-first" style=3D"padding-left:10px; padding-right:10=
+px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#ffffff" bgcolor=3D"#ffffff">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-1743056217448-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17430562174482" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#000000; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj=
+5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3kLW3l7C5g5PqjmYN68yzx=
+qZrg8vW37r2cz7zp0Z9W5lLpFm1nLZ75N34HWpLv27rTW4kVXR25gzG_4N6GrrQJTmPWJW13cNB=
+r1tV3qBW4nvlYd8z9l1QW4w76z06z8sqlW4cXbml60pq2nW20Lszn7l51SfW689Cf-2SYjwgW79=
+p0BM8h3j2YN7RhLsw5sNnRVzLcCv2nP1dlW1P_7y32rtrnQW2Cy-mj6zs4WfV5y3061q5GjCN51=
+Mj_wSVWs_W4_rNTG7327hhW8R0Vfs3FG2YTW89zZ6Z9bQ-BZW2kmZ9M2vnKsdW4xHtnb8Gzk2NW=
+572QwT9cn42Rf5lP17Y04" target=3D"_blank" style=3D"color:#00a4bd" data-hs-li=
+nk-id=3D"0" data-hs-link-id-v2=3D"lgETaSbM">
+        <img alt=3D"kodekloud-logo-new" src=3D"https://team.kodekloud.com/h=
+s-fs/hubfs/kodekloud-logo-new.png?width=3D500&amp;upscale=3Dtrue&amp;name=
+=3Dkodekloud-logo-new.png" style=3D"outline:none; text-decoration:none; bor=
+der:none; max-width:100%; font-size:16px" width=3D"250" align=3D"middle">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-1" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#FFFFFF" bgcolor=3D"#FFFFFF">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#FFFFFF">
+      <tr style=3D"background-color:#FFFFFF;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-1-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:b=
+reak-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module-1-0-0" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrapp=
+er_module-1-0-0_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrap=
+per_type_rich_text" style=3D"color: inherit; font-size: inherit; line-heigh=
+t: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_t=
+ext"><p style=3D"font-size:16px; line-height:175%">Hello Haitham Alqadamani=
+ ,</p>
+<p style=3D"font-size:16px; line-height:175%">&nbsp;</p>
+<p style=3D"font-size:18px; line-height:175%; font-weight:bold; text-align:=
+center" align=3D"center">Where Am I? What=E2=80=99s in This Folder? Let=E2=
+=80=99s Find Out.</p>
+<p style=3D"font-size:16px; line-height:175%">&nbsp;</p>
+<div style=3D"font-size:16px; line-height:175%" data-block-id=3D"block-2f23=
+df55-17a2-471a-a4e9-e9c28f4f9fc9">
+<p style=3D"line-height:175%"><span style=3D"font-weight: bold;">First Less=
+on of Any Linux Journey: Know Where You Are</span><br>When you SSH into a L=
+inux server or run a container shell, your very first question should be:</=
+p>
+<p style=3D"line-height:175%"><br><em>=E2=80=9CWhere am I in the filesystem=
+?=E2=80=9D</em><br><br>The Linux filesystem is <span style=3D"font-weight: =
+bold;">hierarchical </span><span style=3D"font-weight: normal;">-</span>&nb=
+sp;like a tree.<br>You always start at the <span style=3D"font-weight: bold=
+;">root</span>,<span style=3D"font-weight: bold; color: #e04e59;"> <span st=
+yle=3D"color: #37761d;">/.</span></span></p>
+<p style=3D"line-height:175%">Everything -&nbsp;files, folders, config, use=
+rs, devices - lives <span style=3D"font-weight: bold;">somewhere under <spa=
+n style=3D"color: #37761d;">/.</span></span></p>
+</div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17476552853461"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"non=
+e" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align=
+:top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#000=
+000; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:1px solid #23496d;width:50%;marg=
+in:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:1px solid #23496d;wid=
+th:280px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17555109963781"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width: 60=
+0px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 20px;">
+        <h2 style=3D"line-height:115%; color:#000000; margin:0; font-size:2=
+0px">Quick Start Commands</h2>
+      </div>
+     =20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"1=
+" style=3D"border-collapse: collapse; background-color: #ffffff; border-col=
+or: #e0e0e0;">
+        <tbody><tr>
+          <td width=3D"30%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">Command</spa=
+n>
+          </td>
+          <td width=3D"70%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">Purpose</spa=
+n>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">pwd</sp=
+an>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Show Present <strong>Working Di=
+rectory</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">ls</spa=
+n>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">List files in the current direc=
+tory</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">cd /pat=
+h/dir</span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Change directory</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">cd ~</s=
+pan> or <span style=3D"color: #37761D; font-family: monospace;">cd</span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Go to your home directory</span=
+>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">cd -</s=
+pan>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Jump to your previous directory=
+</span>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module_17452168403841"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_17452168403841_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><div style=3D"font-size:16px; line-height:175%" data-blo=
+ck-id=3D"block-2f23df55-17a2-471a-a4e9-e9c28f4f9fc9">
+<h2 style=3D"margin:0; line-height:175%; font-size:16px; font-weight:normal=
+">=F0=9F=93=8C These commands are your <span style=3D"font-weight: bold;">d=
+aily toolkit.</span></h2>
+</div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17476553243972"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"non=
+e" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align=
+:top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#000=
+000; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:1px solid #23496d;width:50%;marg=
+in:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:1px solid #23496d;wid=
+th:280px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1742970730081" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#ffffff" bgcolor=3D"#ffffff">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1742970730081_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:b=
+reak-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_175887546277=
+41" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width:=
+ 600px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 20px;">
+        <h2 style=3D"line-height:115%; color:#000000; margin:0; font-size:2=
+0px">Filesystem Tree</h2>
+      </div>
+     =20
+      <!-- Tree Structure -->
+      <div style=3D"background-color: #D9EAD3; padding: 20px; border-radius=
+: 5px; font-family: monospace; font-size: 14px; line-height: 1.4;">
+        <div style=3D"color: #000000;">
+          /<br>
+          =E2=94=9C=E2=94=80=E2=94=80 bin/<br>
+          =E2=94=9C=E2=94=80=E2=94=80 etc/<br>
+          =E2=94=9C=E2=94=80=E2=94=80 home/<br>
+          =E2=94=82   =E2=94=94=E2=94=80=E2=94=80 devops/<br>
+          =E2=94=82       =E2=94=9C=E2=94=80=E2=94=80 scripts/<br>
+          =E2=94=82       =E2=94=94=E2=94=80=E2=94=80 notes.txt<br>
+          =E2=94=9C=E2=94=80=E2=94=80 var/<br>
+          =E2=94=94=E2=94=80=E2=94=80 usr/
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17588755596572"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width: 60=
+0px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 15px;">
+        <h3 style=3D"line-height:115%; color:#000000; margin:0; font-size:1=
+6px; font-weight:bold">Your Location Changes:</h3>
+      </div>
+     =20
+      <!-- Command Output Display -->
+      <div style=3D"background-color: #000000; padding: 15px; border-radius=
+: 5px; font-family: monospace; font-size: 14px; line-height: 1.4;">
+        <div style=3D"color: #000000;">
+          <span style=3D"color: #ffffff;">$</span> <span style=3D"color: #f=
+fffff;">pwd</span><br>
+          <span style=3D"color: #ffffff;">/home/devops/scripts</span>
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module_17588775478923"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_17588775478923_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><div style=3D"font-size:16px; line-height:175%" data-blo=
+ck-id=3D"block-2f23df55-17a2-471a-a4e9-e9c28f4f9fc9">
+<h2 style=3D"margin:0; line-height:175%; font-size:16px; font-weight:normal=
+">You are inside the <span style=3D"font-weight: bold; color: #37761d;">scr=
+ipts </span>folder of the <span style=3D"color: #37761d; font-weight: bold;=
+">devops </span>user.</h2>
+</div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17588776675395"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width: 60=
+0px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 20px;">
+        <h2 style=3D"line-height:115%; color:#000000; margin:0; font-size:2=
+0px">Important Directories You'll Visit Often</h2>
+      </div>
+     =20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"1=
+" style=3D"border-collapse: collapse; background-color: #ffffff; border-col=
+or: #e0e0e0;">
+        <tbody><tr>
+          <td width=3D"30%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">Directory</s=
+pan>
+          </td>
+          <td width=3D"70%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">What's Insid=
+e</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace; font-sty=
+le: italic;">/</span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">The root of all things</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/home/<=
+/span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Personal folders for users</spa=
+n>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/etc/</=
+span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Configuration files</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/var/</=
+span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Logs, spool data, variable app =
+files</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/usr/</=
+span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">User binaries and read-only sys=
+tem resources</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/bin/</=
+span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Essential command binaries (<sp=
+an style=3D"color: #37761D; font-family: monospace;">ls</span>, <span style=
+=3D"color: #37761D; font-family: monospace;">cat</span>, etc.)</span>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module_17588776428104"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_17588776428104_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><div style=3D"font-size:16px; line-height:175%" data-blo=
+ck-id=3D"block-2f23df55-17a2-471a-a4e9-e9c28f4f9fc9">
+<h2 style=3D"margin:0; line-height:175%; font-size:16px; font-weight:normal=
+">You don=E2=80=99t have to memorize all paths. Just<span style=3D"font-wei=
+ght: bold;"> know where to look </span>when debugging.</h2>
+</div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17588778637466"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width: 60=
+0px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 20px;">
+        <h2 style=3D"line-height:115%; color:#000000; margin:0; font-size:2=
+0px">Try It Yourself (On Any Linux System)</h2>
+      </div>
+     =20
+      <!-- Command Block -->
+      <div style=3D"background-color: #000000; padding: 20px; border-radius=
+: 5px; font-family: monospace; font-size: 14px; line-height: 1.6;">
+        <div style=3D"color: #000000;">
+          <span style=3D"color: #ffffff;">pwd</span>&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D=
+"color: #888888;"># Where am I?</span><br>
+          <span style=3D"color: #ffffff;">ls</span>&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span sty=
+le=3D"color: #888888;"># What's here?</span><br>
+          <span style=3D"color: #ffffff;">cd /etc</span>&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D"color: #888888;"># =
+Jump to config folder</span><br>
+          <span style=3D"color: #ffffff;">ls -l</span>&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D"color: #8=
+88888;"># List with details</span><br>
+          <span style=3D"color: #ffffff;">cd ~</span>&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D"colo=
+r: #888888;"># Back home</span><br>
+          <span style=3D"color: #ffffff;">cd -</span>&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D"colo=
+r: #888888;"># Jump to last location</span>
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module_17588778819617"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_17588778819617_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><div style=3D"font-size:16px; line-height:175%" data-blo=
+ck-id=3D"block-2f23df55-17a2-471a-a4e9-e9c28f4f9fc9">
+<h2 style=3D"margin:0; line-height:175%; font-size:16px; font-weight:normal=
+">=F0=9F=93=8C These might be the first 6 commands you'll type when debuggi=
+ng a Pod or EC2 instance.</h2>
+</div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17555111633344"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"non=
+e" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align=
+:top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#000=
+000; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:1px solid #23496d;width:50%;marg=
+in:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:1px solid #23496d;wid=
+th:280px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17588815760341"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table width=3D"10=
+0%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"max-width: 60=
+0px; margin: 0 auto; font-family: Arial, sans-serif;">
+  <tbody><tr>
+    <td style=3D"font-family:Arial, sans-serif; font-size:15px; color:#0000=
+00; word-break:break-word; padding:20px; background-color:#f5f5f5" bgcolor=
+=3D"#f5f5f5">
+      <!-- Title -->
+      <div style=3D"margin-bottom: 20px;">
+        <h2 style=3D"line-height:115%; color:#000000; margin:0; font-size:2=
+0px">Summary Table</h2>
+      </div>
+     =20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"1=
+" style=3D"border-collapse: collapse; background-color: #ffffff; border-col=
+or: #e0e0e0;">
+        <tbody><tr>
+          <td width=3D"30%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">Concept</spa=
+n>
+          </td>
+          <td width=3D"70%" style=3D"font-family:Arial, sans-serif; font-si=
+ze:15px; color:#000000; word-break:break-word; padding:12px; border:1px sol=
+id #e0e0e0; background-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000; font-weight: bold;">Meaning</spa=
+n>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Filesystem Root</span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/</span=
+> <span style=3D"color: #000000;">is the top of the Linux filesystem</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">pwd</sp=
+an>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Shows your current location</sp=
+an>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">cd</spa=
+n>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Moves you around</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">ls</spa=
+n>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Lists files/folders</span>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #000000;">Key folders</span>
+          </td>
+          <td style=3D"font-family:Arial, sans-serif; font-size:15px; color=
+:#000000; word-break:break-word; padding:12px; border:1px solid #e0e0e0; ba=
+ckground-color:#ffffff" bgcolor=3D"#ffffff">
+            <span style=3D"color: #37761D; font-family: monospace;">/home</=
+span><span style=3D"color: #000000;">, </span><span style=3D"color: #37761D=
+; font-family: monospace;">/etc</span><span style=3D"color: #000000;">, </s=
+pan><span style=3D"color: #37761D; font-family: monospace;">/var</span><spa=
+n style=3D"color: #000000;">, </span><span style=3D"color: #37761D; font-fa=
+mily: monospace;">/bin</span><span style=3D"color: #000000;">, </span><span=
+ style=3D"color: #37761D; font-family: monospace;">/usr</span>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_1755511172555" class=3D"hse-section" style=3D"padding-=
+left:10px; padding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#ffffff" bgcolor=3D"#ffffff">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#ffffff">
+      <tr style=3D"background-color:#ffffff;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column_1755511172555_0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:b=
+reak-word; padding:10px 35px"><div id=3D"hs_cos_wrapper_module_175551116754=
+05" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_c=
+os_wrapper_module_17555111675405_" class=3D"hs_cos_wrapper hs_cos_wrapper_w=
+idget hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: in=
+herit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-c=
+os-type=3D"rich_text"><h2 style=3D"margin:0; font-size:16px; line-height:17=
+5%; font-weight:normal"><span style=3D"font-weight: bold; font-size: 18px;"=
+>Quick Review</span></h2>
+<ul style=3D"line-height:115%">
+<li style=3D"font-size: 16px; line-height: 175%; font-weight: normal;">What=
+ does <span style=3D"color: #e04e59;"><strong><span style=3D"color: #37761d=
+;">cd</span> </strong></span>- do?</li>
+<li style=3D"font-size: 16px; line-height: 175%; font-weight: normal;">Wher=
+e would you find the <span style=3D"color: #e04e59;"><strong><span style=3D=
+"color: #37761d;">nginx.conf</span> </strong></span>file?</li>
+<li style=3D"font-size: 16px; line-height: 175%; font-weight: normal;">Whic=
+h directory holds logs like <span style=3D"color: #37761d;"><strong>syslog<=
+/strong></span>?</li>
+</ul>
+<p style=3D"font-size:16px; line-height:175%"><span style=3D"font-weight: b=
+old; font-size: 18px;">Answers:</span></p>
+<ul style=3D"line-height:115%">
+<li style=3D"font-size: 16px; line-height: 175%;">Goes to previous director=
+y</li>
+<li style=3D"font-size: 16px; line-height: 175%;">Likely<span style=3D"colo=
+r: #37761d;"> <strong>/etc/nginx/nginx.conf</strong></span></li>
+<li style=3D"font-size: 16px; line-height: 175%;">Logs live in<span style=
+=3D"color: #e04e59;"><strong> <span style=3D"color: #37761d;">/var/log/</sp=
+an></strong></span></li>
+</ul>
+<p style=3D"font-size:16px; line-height:175%">=F0=9F=94=9C Up Next: "The 20=
+ Commands You=E2=80=99ll Use 80% of the Time."</p>
+<p style=3D"font-size:16px; line-height:175%">&nbsp;</p>
+<p style=3D"line-height:175%"><span style=3D"font-size: 16px;">Happy Learni=
+ng!</span></p>
+<p style=3D"line-height:175%">&nbsp;</p>
+<p style=3D"line-height:175%"><span style=3D"font-size: 16px;">Nimesha Jina=
+rajadasa</span></p>
+<p style=3D"line-height:175%"><span style=3D"font-size: 16px;">Solutions En=
+gineer (DevOps &amp; Cloud)&nbsp;</span></p>
+<p style=3D"line-height:175%"><span style=3D"font-size: 16px;">KodeKloud</s=
+pan></p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section_17292377138116" class=3D"hse-section hse-section-last"=
+ style=3D"padding-left:10px; padding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#1c2943; padding-bottom:20px; pad=
+ding-top:20px" bgcolor=3D"#1c2943">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#1c2943">
+      <tr style=3D"background-color:#1c2943;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:20px; padding-top:=
+20px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-1729237713811-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module_17292377138102" class=3D"hs_cos_wrapper =
+hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; =
+font-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widg=
+et" data-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"=
+presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; color:#000000; word-break:break-word; text-align:center; padding:0px=
+; font-size:0px">
+        <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj=
+5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3qgz0W7lCdLW6lZ3m8W1Z70K37yvJfnW2Lyb2=
+Z6911sMW3l81c65v3qXjN1c9vGxLPxskN7h9Y8pw7hdVW1_J-f83Ph46jVdf_KL5dq5bzW40CHN=
+53Bk_HGW303J9m87VQbQW7-fC0Q4ddxHHN6MjnS0F-yydW2CmzKw2FxjwgVWfR8B1W4l3qVg6w0=
+52pFTw4W3yb1bw7pxXQHW6kFG281nl-vPW6V5jJC4FCCz2W32gDtN37fnC1W8dLQf62P3yr2W1Z=
+QN7V5z28xkW21bRtW25xtBjW11phzS4KZbwJW7VH5j37CZZcCW1fz6DH2_7sHjf718WTx04" ta=
+rget=3D"_blank" style=3D"color:#00a4bd" data-hs-link-id=3D"0" data-hs-link-=
+id-v2=3D"4S6iHC41">
+        <img alt=3D"Kode Kloud" src=3D"https://team.kodekloud.com/hs-fs/hub=
+fs/kodekloud-white-logo.png?width=3D500&amp;upscale=3Dtrue&amp;name=3Dkodek=
+loud-white-logo.png" style=3D"outline:none; text-decoration:none; border:no=
+ne; max-width:100%; font-size:16px" width=3D"250" align=3D"middle">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17292377138103"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_17292377138103_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><p style=3D"text-align:center; font-size:14px; line-heig=
+ht:115%" align=3D"center"><span style=3D"color: #ffffff;"><a href=3D"https:=
+//team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bv=
+k5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3lZW1LF9_b6GlXm_W29pwXW1TC903VSzL6V8wW4qyW1dNfB=
+f4Jf8TRN1tV_PQRwJjVW5TdzlW2-4H-nW3TTPwZ6vVfPlN5pxQfjPVtQNN7_qLd2gN7T_W6t9vW=
+j7t6hGRW1zK8GD16_3L6W1Zcb205jdkFyW3S0B5n4yjy4_W49dQNj275kC0W8-kB0J26777QW4L=
+sx_720-w7PVl3lx94tdvjNVff63P6K2X-NW6bxhwM6RzbT_VqsM0_2Pf52FW3V5Jkg73hd1HVMl=
+T4551gK1KW4p1g6l4W08vnW4rDkWV3W_-1LW3_q_b88gxc4PW7ByFhz57jCcVf3kc5NT04" sty=
+le=3D"font-weight:bold; color:#ffffff" rel=3D"noopener" data-hs-link-id=3D"=
+0" data-hs-link-id-v2=3D"XMUIdBfW" target=3D"_blank">Learning Path</a> | <a=
+ href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73T=
+vPS2dFKnDW5b9Bvk5DdsQyMXl4pj3qgz0W7lCdLW6lZ3n7W3jLSM-4HDQm1N2z44cGwnztYW2kX=
+tVy7BQzlkW6DtrGG3Np4H5W59db1Y8r3KbXW6xRj4J31sGB_W62vsM647pJRsW47Qxlt6Gbg_tW=
+50519x4ldXwhW5sh9zX45-JgXW1trqRs6Wdxm8N1G0_r1BDq32W67l-Qs2ffnVpW8fjGZj8Szq3=
+yW5NWPtK1v3PXfW3fQ8-y6lD7LWW1kQY127kfT9YW3Rb9tk2DFTrxVJX20n7_yRCHW8Rb_7N5GX=
+TD3W5Pvn652_V9-pW3H2PqJ5SQJ_BW3Lplh75PGKwlN1hsjHVYNbyDf451v9b04" style=3D"f=
+ont-weight:bold; color:#ffffff" rel=3D"noopener" data-hs-link-id=3D"0" data=
+-hs-link-id-v2=3D"GVT0AFOY" target=3D"_blank"><span style=3D"font-weight: b=
+old;">For Teams</span></a> |&nbsp; <a href=3D"https://team.kodekloud.com/e3=
+t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3qgz0W7lCd=
+LW6lZ3l5W93GpDM1vSJSYW8ZsJ7y78v-XdN3xtkMYSpYyGW2rdMj273rJ3WW89YTb57tcDBCW4_=
+hbYb2MzPWjW4bxd9h12K4qfW2SvPfx8S5YsfW2P-ZVT15L9JXVDCfCp5Gw70FW6MCmmT4vzWmBN=
+5jr-nVPP3w-W7tlWpW4MDQNBW3hbW5b1KCtV0W7RRC454llHqCW2hR8dc63mCgKVcn6SB1WHSSR=
+N345mXC4FffJW5q4CK59cKJjlW81Q_FK45wd-ZW2KWRZ26-ClcgW2NPWtT6RtxtPN63-r8TPH6W=
+XN6hQzHs_Zdg3f3w1dG604" style=3D"font-weight:bold; color:#ffffff" rel=3D"no=
+opener" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"8W1g3Ane" target=3D"_bl=
+ank">KodeKloud Engineer</a> | <a href=3D"https://team.kodekloud.com/e3t/Ctc=
+/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ=
+3n1W5KV_cH7FfHPlW6fw1x09bm3XSW8NvLjW1SPcWqW1SCtYg1n0z02W9lfBTh7C7q0bVTYB2-4=
+XB1ghW8jjF3G6lXSx3W1vKl7v1NtT6wVVZtqd7QmPByW6yjHXS2-SmHRW3HjFKQ7JG9SkN49Dg6=
+nV8dsDN8WKjBKz7pW4W8J_G7P7qpf5mW6QZCvk44KBpMW9lvS3P4RGnclW48F8wz8NDsSGW2TkD=
+WY58nJjWW2JK5B92kcpfMW9j_d2G2nZjgWVwRHMT18JcvWW84WhLk8-Y_FmW3TPGkB3bGCWqVTL=
+nlj544RVbMgl4bp1pqqtVhG6ym6G7RrDf5Wnp0d04" style=3D"font-weight:bold; color=
+:#ffffff" rel=3D"noopener" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"Eq0X=
+XKDH" target=3D"_blank">Playgrounds</a>&nbsp;| <a href=3D"https://team.kode=
+kloud.com/e3t/Ctc/2L+113/cQ4sL04/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4=
+pj3qgz0W7lCdLW6lZ3pPW3bptYF8kJcRpW2hMMtN1x2rs4W7bzb_W8Vx8YwW2tFJrv1CQ7s2N8b=
+JMkshnw0XW20SXzz6lJ48MN6PGRwwZHxx4N8C4qLVD8MPWW87Gx_m5l2f8jW6n4VDj3xnghkW3W=
+h9zs7n19_TW2Mb1vC3jH9f1W3-1Sfx1_jpjZN8dQ68cWsbQNW42Hskq7LMrmbW4D888_4nbT7LV=
+9JwMp4rQMGvW8JHsQt8PhXVTN20nGVdL3RppW2THvXP3Qt5V5N533f4TDRGRjW7Trv4v88XgKhW=
+1jnK-d1CkWyHW2RZg3M7DmKgLf1F9Yb404" style=3D"font-weight:bold; color:#fffff=
+f" rel=3D"noopener" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"D+omVhxV" t=
+arget=3D"_blank">Pricing</a></span></p></div></div></td></tr></tbody></tabl=
+e>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_17292377138104"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"pre=
+sentation" align=3D"center" style=3D"width: auto; text-align: center; margi=
+n: 0 auto; " class=3D"hs_cos_wrapper_type_social_module">
+  <tbody>
+    <tr>
+      <td class=3D"social-network-cell" align=3D"center" style=3D"font-fami=
+ly:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-word"=
+>
+        <table role=3D"presentation" align=3D"center" style=3D"width: auto;=
+ text-align: center; margin: 0 auto; " class=3D"hs_cos_wrapper_type_social_=
+module_single">
+          <tbody>
+            <tr>
+              <td class=3D"display_block_on_small_screens" align=3D"center"=
+ style=3D"font-family:Arial, sans-serif; font-size:15px; color:#000000; wor=
+d-break:break-word; padding:8px 5px; line-height:1; vertical-align:middle" =
+valign=3D"middle">
+                <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL0=
+4/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3pLW4M9SF25vTN=
+wgW6qj3KR94kBs5W2GXKx35FvhPmW74nxXl34H43_W8TwvfH3m7sHXW6t0bhz4gqXZrW7hr8Pn5=
+z7HVqV1JHr84hzcwyVHm5S55fYfQ9W7bhyJF2Pf73KW68yYdB5R4GNtW1g6lVK4pJRXQW8Sv76h=
+7G5d8QN8m1h74pYDP_N5f0tf8FgqB-W1B6yGj1hzxjfW2kGCb56QzwvqW3Lk9jS5CkgVdW3gj36=
+L6WYyMYVh27gV1Fqd7NW93Bs0c3r88x3V2RQmB5JMCXYMq0FVKlQPhjW1RZZrT61f6Q6W7rn7yx=
+2WWS8-W7h0nZT2w35scf3c5vSl04" style=3D"color:#00a4bd; text-decoration:none =
+!important" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"YgRurl83" target=3D=
+"_blank"><img src=3D"https://team.kodekloud.com/hs/hsstatic/TemplateAssets/=
+static-1.262/img/hs_default_template_images/modules/Follow+Me+-+Email/faceb=
+ook_circle_color.png" alt=3D"Facebook" height=3D"25" style=3D"outline:none;=
+ text-decoration:none; border:none; width:auto!important; height:25px!impor=
+tant; vertical-align:middle" valign=3D"middle" width=3D"auto">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td><td class=3D"social-network-cell" align=3D"center" style=3D"font=
+-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-=
+word">
+        <table role=3D"presentation" align=3D"center" style=3D"width: auto;=
+ text-align: center; margin: 0 auto; " class=3D"hs_cos_wrapper_type_social_=
+module_single">
+          <tbody>
+            <tr>
+              <td class=3D"display_block_on_small_screens" align=3D"center"=
+ style=3D"font-family:Arial, sans-serif; font-size:15px; color:#000000; wor=
+d-break:break-word; padding:8px 5px; line-height:1; vertical-align:middle" =
+valign=3D"middle">
+                <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL0=
+4/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3nSW4vf5WN2-rW=
+cMW5BmnN62kJjrJW4kvW-P18sNCgN1RPJLL_FYW6W1bN9g58tWwqlW1ZmW8p41WbCsW6lcMFs4V=
+ymVSN8gg-pG7y311W6YBjwf5mBL2rW3nJfZY67-3VDW3C25lp8ymTGQW6Hq7hW1YzMspW1jjmG9=
+2h3TN5N3KnpXmksK1FVZ7mbc5S5_b3W7YXCtT6fxDPxW1ByDbW416QR7W4fhRWD70bZF_W37Jjd=
+b7s1HkMN6-qfpMlwRFqVjD6P52FQ-2FW6N1cGH2m3Br1W6r3fj33rTkGPW31xCR11dQ_jbVVYjj=
+t42Jq7ZN53Kj3nTdLWZf4gN_ml04" style=3D"color:#00a4bd; text-decoration:none =
+!important" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"igmByCci" target=3D=
+"_blank"><img src=3D"https://team.kodekloud.com/hs/hsstatic/TemplateAssets/=
+static-1.262/img/hs_default_template_images/modules/Follow+Me+-+Email/linke=
+din_circle_color.png" alt=3D"LinkedIn" height=3D"25" style=3D"outline:none;=
+ text-decoration:none; border:none; width:auto!important; height:25px!impor=
+tant; vertical-align:middle" valign=3D"middle" width=3D"auto">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td><td class=3D"social-network-cell" align=3D"center" style=3D"font=
+-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-=
+word">
+        <table role=3D"presentation" align=3D"center" style=3D"width: auto;=
+ text-align: center; margin: 0 auto; " class=3D"hs_cos_wrapper_type_social_=
+module_single">
+          <tbody>
+            <tr>
+              <td class=3D"display_block_on_small_screens" align=3D"center"=
+ style=3D"font-family:Arial, sans-serif; font-size:15px; color:#000000; wor=
+d-break:break-word; padding:8px 5px; line-height:1; vertical-align:middle" =
+valign=3D"middle">
+                <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL0=
+4/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pj3qgz0W7lCdLW6lZ3m6W359RqS3gvs=
+1hW3zQt2Y15rR1rW16P-7k6vmY77W1jBGRF97yFRmW4x-Jyq2Ds5fbW2NsmTp4yj9rnN8NhR4Jv=
+BWGSW4HDjBd7JcN62W43cP2Z8rmBntW2HFxqL1dGVh6W2N88XF3YMVSkW44ksLl8c36nTW4TkB_=
+k7GKMGcW1GY8DZ1FqjBrW7jf_CG2VXy9YW63CQrm16VWxQN1DLFkLNF6vqW5fWF2d2Fqbl9W163=
+x7H3ytqLqW2Cct8B3Dyq4zW7nCJlN4BFLS3W1yLJFt9gGDJ1F9fff0_nVlRW2BFWvx1PSMM1f5_=
+_CX204" style=3D"color:#00a4bd; text-decoration:none !important" data-hs-li=
+nk-id=3D"0" data-hs-link-id-v2=3D"wIfDioR7" target=3D"_blank"><img src=3D"h=
+ttps://team.kodekloud.com/hs/hsstatic/TemplateAssets/static-1.262/img/hs_de=
+fault_template_images/modules/Follow+Me+-+Email/twitter_circle_color.png" a=
+lt=3D"X" height=3D"25" style=3D"outline:none; text-decoration:none; border:=
+none; width:auto!important; height:25px!important; vertical-align:middle" v=
+align=3D"middle" width=3D"auto">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td><td class=3D"social-network-cell" align=3D"center" style=3D"font=
+-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-=
+word">
+        <table role=3D"presentation" align=3D"center" style=3D"width: auto;=
+ text-align: center; margin: 0 auto; " class=3D"hs_cos_wrapper_type_social_=
+module_single">
+          <tbody>
+            <tr>
+              <td class=3D"display_block_on_small_screens" align=3D"center"=
+ style=3D"font-family:Arial, sans-serif; font-size:15px; color:#000000; wor=
+d-break:break-word; padding:8px 5px; line-height:1; vertical-align:middle" =
+valign=3D"middle">
+                <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL0=
+4/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3mmW67V8nq8Rtg=
+71W5wFbBY3NxktyW6xMB2B8ZqVxgW79-Z513yzlXhW6Nb5Z37rKdb3W3PyTMh9frXX8N5pbg0Mm=
+p19sW45fjvv8zByVFW77XG5g12c5YkN8zXxj0ZcYPhW25S-xn8T42LVW75ngkW6tL2WLW7xwSt3=
+4tyXc4W8qKLqx8NrD_CW4Vt5cH50GsHfW5LGFg26F4chHW8S5mh_2m350FW4TjNgP1fws8hW1Hr=
+kP727DFtQN4rfgsKW0tr2W6XwczH7nsH_5W2PsCMy3RT1hmN8ZLH68qTqPzW56XYC06DtymFW2f=
+QRk11z4c56W2cts1T89rmnbf8G-pHH04" style=3D"color:#00a4bd; text-decoration:n=
+one !important" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"YfWiZU+m" targe=
+t=3D"_blank"><img src=3D"https://team.kodekloud.com/hs/hsstatic/TemplateAss=
+ets/static-1.262/img/hs_default_template_images/modules/Follow+Me+-+Email/i=
+nstagram_circle_color.png" alt=3D"Instagram" height=3D"25" style=3D"outline=
+:none; text-decoration:none; border:none; width:auto!important; height:25px=
+!important; vertical-align:middle" valign=3D"middle" width=3D"auto">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td><td class=3D"social-network-cell" align=3D"center" style=3D"font=
+-family:Arial, sans-serif; font-size:15px; color:#000000; word-break:break-=
+word">
+        <table role=3D"presentation" align=3D"center" style=3D"width: auto;=
+ text-align: center; margin: 0 auto; " class=3D"hs_cos_wrapper_type_social_=
+module_single">
+          <tbody>
+            <tr>
+              <td class=3D"display_block_on_small_screens" align=3D"center"=
+ style=3D"font-family:Arial, sans-serif; font-size:15px; color:#000000; wor=
+d-break:break-word; padding:8px 5px; line-height:1; vertical-align:middle" =
+valign=3D"middle">
+                <a href=3D"https://team.kodekloud.com/e3t/Ctc/2L+113/cQ4sL0=
+4/VWDhJj5k4sBdW73TvPS2dFKnDW5b9Bvk5DdsQyMXl4pC3qgz0W7Y8-PT6lZ3nnW3J_D_L1ntL=
+XRW9c0rNP17rXjMW1wrLyc2mpcDyW5gGsY49h-CZDW6TPtlz2WyKPnVX2-cq6_P_PTW99F7zY5k=
+nLL3W2Lmm-m9h4q_zW4DHQBr7Wq0V_W9jGqrh4KmZZmW3D-xCS7GchzBW1T0T_D1SxJ4jW8BbPl=
+R6_yyK9W3Lf6NQ59679HW3pPyT_3GwvWQW2n8_dc5PvBWxN2slmFQyBDcpW9fkmsN1zGFZGW4DD=
+Sx28JlLHBW1dFYHz4pcHPWW7_14Cb2Ly_L-W72Sz4_5vx3N8W7JCGgz37hCzpW8N5YjC7_lCp4W=
+5bcmBj2dRScQW1St-Mr1nDQH2f1wkp5q04" style=3D"color:#00a4bd; text-decoration=
+:none !important" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"0IlcTpWg" tar=
+get=3D"_blank"><img src=3D"https://team.kodekloud.com/hs/hsstatic/TemplateA=
+ssets/static-1.262/img/hs_default_template_images/modules/Follow+Me+-+Email=
+/youtube_circle_color.png" alt=3D"YouTube" height=3D"25" style=3D"outline:n=
+one; text-decoration:none; border:none; width:auto!important; height:25px!i=
+mportant; vertical-align:middle" valign=3D"middle" width=3D"auto">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div></td></tr></tbody></table>
+<div id=3D"hs_cos_wrapper_module_17292377138105" class=3D"hs_cos_wrapper hs=
+_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; fo=
+nt-size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget=
+" data-hs-cos-type=3D"module"><table role=3D"presentation" class=3D"hse-foo=
+ter hse-secondary" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"font-family:Arial, sans-serif; font-size:12px; line-height:135%; color:=
+#23496d; margin-bottom:0; padding:0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; font-size:15px; color:#000000; word-break:break-word; text-align:cen=
+ter; margin-bottom:0; line-height:135%; padding:10px 20px">
+          <p style=3D"font-size: 11px; line-height: 125%;"><span style=3D"c=
+olor: #ffffff;"><a href=3D"https://team.kodekloud.com/hs/preferences-center=
+/en/direct?data=3DW2nXS-N30h-zKW3b2qZW1N6sMLW1V25rm4cSPzBW1L8HJ91S9hzVW3g71=
+5L1-_lj_W3JR2gC47zQrgW3XWc1Z47v6NsW2xzjdr2MXtwDW3KbqtN3P0XGMW4kmf-j2KBprGW2=
+C-Rq02PLLb6W3C0DXB1N5_nJW3LYYBj4rlJnQW3ZZQts3T541-W4mk2y82KCf9XW3Kb16v3j9MT=
+TW4t6Vcr3y-k8ZW2RR0Y71LmtrDW4rqX_J2Tshw7W2vz7tV4kfw0mW49l36z3ZHMrxW4t6S-73G=
+S6nSW43qtlw38vpm8W2CYM-W2Pl5LtW43Xxxl3_T87kW3ChJ232FWVH6W2YqFDp2G0fhzW3F0rl=
+P1LfgZmW23mnlp3Fg8f1W2vJy5C4tgQbgW2RknXs4hxFgCW47tKb72qFgYpW3f-MrW2PVftpW3D=
+VMDD3dr4SvW3NLYjl3DSgM8W4rzRL12Wy7l-W3_LWXF3C7hB2W41V9kH2MLyh7W4r7xlz4pbFc9=
+W3LHMNB34hFyFW3NGfn043YjqgW2MNzdv1S9jKGW3P9d_41NdfWbW2FJzb52qLJD0W2-JPG536z=
+lKtW47PrG83JWGr4W1Bm4Mw3C8ybJW3675sJ38kd1TW2KyMlJ2FLM0YW2YKWK349Kt3J0&amp;u=
+tm_campaign=3D20132129-email_course_linux&amp;utm_source=3Dhs_automation&am=
+p;utm_medium=3Demail&amp;utm_content=3D382927398&amp;_hsenc=3Dp2ANqtz-9FT7k=
+YLw-p6iD8olzdkxUkYLbjqo-E4jeBOG-lz1grMXGs0M1dGicnw9fxCWhgr4y3MYga2dtKhsqruX=
+AxYv7S3YX4OQ&amp;_hsmi=3D382927398" style=3D"color:#ffffff" data-unsubscrib=
+e=3D"true" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"SFRZzEXk" target=3D"=
+_blank">Unsubscribe</a> or <a href=3D"https://team.kodekloud.com/hs/prefere=
+nces-center/en/page?data=3DW2nXS-N30h-zKW3b2qZW1N6sMLW1V25rm4cSPzBW1L8HJ91S=
+9hzVW3g715L1-_lj_W3JR2gC47zQrgW3XWc1Z47v6NsW2xzjdr2MXtwDW3KbqtN3P0XGMW4kmf-=
+j2KBprGW2C-Rq02PLLb6W3C0DXB1N5_nJW3LYYBj4rlJnQW3ZZQts3T541-W4mk2y82KCf9XW3K=
+b16v3j9MTTW4t6Vcr3y-k8ZW2RR0Y71LmtrDW4rqX_J2Tshw7W2vz7tV4kfw0mW49l36z3ZHMrx=
+W4t6S-73GS6nSW43qtlw38vpm8W2CYM-W2Pl5LtW43Xxxl3_T87kW3ChJ232FWVH6W2YqFDp2G0=
+fhzW3F0rlP1LfgZmW23mnlp3Fg8f1W2vJy5C4tgQbgW2RknXs4hxFgCW47tKb72qFgYpW3f-MrW=
+2PVftpW3DVMDD3dr4SvW3NLYjl3DSgM8W4rzRL12Wy7l-W3_LWXF3C7hB2W41V9kH2MLyh7W4r7=
+xlz4pbFc9W3LHMNB34hFyFW3NGfn043YjqgW2MNzdv1S9jKGW3P9d_41NdfWbW2FJzb52qLJD0W=
+2-JPG536zlKtW47PrG83JWGr4W1Bm4Mw3C8ybJW3675sJ38kd1TW2KyMlJ2FLM0YW2YKWK349Kt=
+3J0&amp;utm_campaign=3D20132129-email_course_linux&amp;utm_source=3Dhs_auto=
+mation&amp;utm_medium=3Demail&amp;utm_content=3D382927398&amp;_hsenc=3Dp2AN=
+qtz-9FT7kYLw-p6iD8olzdkxUkYLbjqo-E4jeBOG-lz1grMXGs0M1dGicnw9fxCWhgr4y3MYga2=
+dtKhsqruXAxYv7S3YX4OQ&amp;_hsmi=3D382927398" style=3D"color:#ffffff" data-u=
+nsubscribe=3D"true" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"qjPJqCop" t=
+arget=3D"_blank">Manage Preferences</a>.</span></p>
+<p style=3D"font-size: 11px; line-height: 125%;">&nbsp;</p>
+<p style=3D"font-size: 11px; line-height: 125%;"><span style=3D"color: #fff=
+fff;">KodeKloud (Brand owned by Zaurac Technologies PTE. LTD.)</span><br><s=
+pan style=3D"color: #ffffff;">14 Robinson Road, #08-01A Far East Finance Bu=
+ilding,&nbsp;Singapore, Central Singapore, 048545 Singapore </span></p>
+<p style=3D"font-size: 11px; line-height: 125%;"><span style=3D"color: #fff=
+fff;">&nbsp;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div></div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+ =20
+<img src=3D"https://team.kodekloud.com/e3t/Cto/2L+113/cQ4sL04/VWDhJj5k4sBdW=
+73TvPS2dFKnDW5b9Bvk5DdsQyVXl4853CZXvq132" alt=3D"" width=3D"1" height=3D"1"=
+ border=3D"0" style=3D"display:none!important;min-height:1px!important;widt=
+h:1px!important;border-width:0!important;margin-top:0!important;margin-bott=
+om:0!important;margin-right:0!important;margin-left:0!important;padding-top=
+:0!important;padding-bottom:0!important;padding-right:0!important;padding-l=
+eft:0!important"></body></html>
+------=_Part_16589_373645324.1759578922888--
+
